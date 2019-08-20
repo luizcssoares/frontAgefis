@@ -1,0 +1,20 @@
+<div class="container">                  
+        
+        <h2> Financeiro diario com total de ocupação das vagas </h2> 
+        <table class="table table-striped table-hover">   
+            <thead>
+                <tr>
+                  <th>Data</th>  
+                  <th>Valor</th>
+                  <th></th>                    
+                </tr>
+            </thead>
+            <tbody>  
+                <tr *ngFor="let financeiro of financas">
+                  <td>{{financeiro.entrada}}</td>
+                  <td>{{financeiro.valor}}</td>                           
+                </tr>                   
+            </tbody>
+        </table>      
+    
+    </div>

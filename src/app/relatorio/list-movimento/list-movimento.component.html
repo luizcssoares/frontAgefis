@@ -1,0 +1,29 @@
+<div class="container">                  
+        
+        <h2> Diario de ocupação/desocupação das vagas </h2> 
+        <table class="table table-striped table-hover">   
+            <thead>
+                <tr>
+                  <th>Id</th>  
+                  <th>Idvaga</th>
+                  <th>Numplaca</th>                    
+                  <th>Entrada</th>                    
+                  <th>Hora</th>                    
+                  <th>Saida</th>                    
+                  <th>Valor</th>                    
+                </tr>
+            </thead>
+            <tbody>  
+                <tr *ngFor="let movimento of movimentos">
+                  <td>{{movimento.id}}</td>  
+                  <td>{{movimento.idvaga}}</td>
+                  <td>{{movimento.numplaca}}</td>  
+                  <td>{{movimento.entrada}}</td>
+                  <td>{{movimento.hora}}</td>  
+                  <td>{{movimento.saida}}</td>
+                  <td>{{movimento.valor}}</td>                           
+                </tr>                   
+            </tbody>
+        </table>      
+    
+    </div>

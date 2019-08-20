@@ -1,0 +1,32 @@
+
+<form novalidate (ngSubmit)="onSubmit(editForm)" [formGroup]="editForm"> 
+    <h4>Edita Desocupacao</h4>      
+        <div class="form-group">
+            <label for="id">id</label>
+            <input type="text" formControlName="id" class="form-control" placeholder="id" name="id" id="id"> 
+        </div>  
+        <div class="form-group">
+            <label for="idvaga">vaga</label>
+            <input type="text" formControlName="vaga" class="form-control" placeholder="idvaga" name="idvaga" id="idvaga"> 
+        </div>  
+        <div class="form-group">
+            <label for="idconfig">idconfig</label>
+            <input type="text" formControlName="idconfig" class="form-control" placeholder="idconfig" name="idconfig" id="idconfig"> 
+        </div>          
+        <div class="form-group">
+            <label for="saida">Saida</label>
+            <input type="text" formControlName="saida" class="form-control" placeholder="saida" name="saida" id="saida"> 
+        </div>                  
+        <div class="form-group">
+            <label for="hora">hora</label>
+            <input type="text" formControlName="hora" class="form-control" placeholder="hora" name="hora" id="hora"> 
+        </div>          
+        <div class="form-group">
+            <label for="valor">Valor</label>
+            <input type="text" formControlName="valor" class="form-control" placeholder="valor" name="valor" id="valor"> 
+        </div>          
+        <div> 
+            <button type="cancel" class="btn btn-cancel">Cancel</button>
+            <button type="submit" class="btn btn-primary">Gravar</button> 
+        </div>  
+</form>  

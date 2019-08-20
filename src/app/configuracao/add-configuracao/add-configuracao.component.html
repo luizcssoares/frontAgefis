@@ -1,0 +1,23 @@
+<div class="alert alert-success" role="alert" *ngIf="sucesso">
+    Configuracao inserida com sucesso!
+    <br />
+</div>
+<form novalidate (ngSubmit)="onSubmit(addForm)" [formGroup]="addForm"> 
+    <h4> Nova Configuracao </h4>     
+    <div class="form-group">  
+        <label for="id">Id</label>
+        <input type="text" class="form-control" placeholder="id" formControlName="id" name="id" id="id"> 
+    </div>  
+    <div class="form-group">  
+        <label for="valor">Valor</label>
+        <input type="text" class="form-control" placeholder="valor" formControlName="valor" name="valor" id="valor"> 
+    </div>  
+    <div class="form-group">  
+        <label for="data">Data</label>
+        <input type="text" class="form-control" placeholder="data" formControlName="data" name="data" id="data" > 
+    </div>  
+    <div>           
+          <button type="Cancel" class="btn btn-danger">Cancelar</button> 
+          <button type="submit" class="btn btn-primary">Gravar</button>          
+    </div>      
+</form>  

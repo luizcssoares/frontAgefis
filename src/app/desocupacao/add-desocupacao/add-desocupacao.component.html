@@ -1,0 +1,35 @@
+<div class="alert alert-success" role="alert" *ngIf="sucesso">
+    Desocupacao inserida com sucesso!
+    <br />
+</div>
+<form novalidate (ngSubmit)="onSubmit(addForm)" [formGroup]="addForm"> 
+    <h4> Nova Desocupacao </h4>     
+    <div class="form-group">  
+        <label for="id">Id</label>
+        <input type="text" class="form-control" placeholder="id" formControlName="id" name="id" id="id"> 
+    </div>  
+    <div class="form-group">  
+        <label for="id">Idvaga</label>
+        <input type="text" class="form-control" placeholder="idvaga" formControlName="idvaga" name="idvaga" id="idvaga"> 
+    </div>  
+    <div class="form-group">  
+        <label for="nome">Idconfig</label>
+        <input type="text" class="form-control" placeholder="idconfig" formControlName="idconfig" name="idconfig" id="idconfig" > 
+    </div>  
+    <div class="form-group">  
+        <label for="valor">Saida</label>
+        <input type="text" class="form-control" placeholder="saida" formControlName="saida" name="saida" id="saida"> 
+    </div>  
+    <div class="form-group">  
+        <label for="valor">Hora</label>
+        <input type="text" class="form-control" placeholder="hora" formControlName="hora" name="hora" id="hora">
+    </div>  
+    <div class="form-group">  
+        <label for="valor">Valor</label>
+        <input type="text" class="form-control" placeholder="valor" formControlName="valor" name="valor" id="valor">
+    </div>  
+    <div>           
+          <button type="Cancel" class="btn btn-danger">Cancelar</button> 
+          <button type="submit" class="btn btn-primary">Gravar</button>          
+    </div>      
+</form>  

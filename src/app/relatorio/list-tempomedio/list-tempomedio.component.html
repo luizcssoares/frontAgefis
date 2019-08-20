@@ -1,0 +1,20 @@
+<div class="container">                  
+          
+        <h2> Tempo medio diario ocupação das vagas </h2> 
+        <table class="table table-striped table-hover">   
+            <thead>
+                <tr>
+                  <th>Data</th>  
+                  <th>Media/Tempo</th>
+                  <th></th>                    
+                </tr>
+            </thead>
+            <tbody>  
+                <tr *ngFor="let tempo of tempomedios">
+                  <td>{{tempo.entrada}}</td>
+                  <td>{{tempo.tempomedio}}</td>                           
+                </tr>                   
+            </tbody>
+        </table>      
+    
+    </div>

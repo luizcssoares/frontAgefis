@@ -1,0 +1,39 @@
+<div class="container">                  
+
+    <button class="btn btn-success" (click)="addDesocupacao()"> Nova Desocupacao </button>
+    <table class="table table-striped table-hover">   
+        <thead>
+            <tr>
+              <th>Id</th>  
+              <th>Idvaga</th>
+              <th>Saida</th>
+              <th>Hora</th>
+              <th>Idconfig</th>
+              <th>Valor</th>
+              <th></th>                    
+              <th></th>
+            </tr>
+        </thead>
+        <tbody>  
+            <tr *ngFor="let desocupacao of desocupacoes">
+              <td>{{desocupacao.id}}</td>
+              <td>{{desocupacao.idvaga}}</td>
+              <td>{{desocupacao.saida}}</td>
+              <td>{{desocupacao.hora}}</td>                     
+              <td>{{desocupacao.idconfig}}</td>                     
+              <td>{{desocupacao.valor}}</td>                                   
+              <td>          
+                  <button type="button" class="btn btn-danger" (click)="deleteDesocupacao(desocupacao)">
+                    <span class="glyphicon glyphicon-trash"></span>
+                  </button>                                         
+              </td>
+              <td>
+                  <button type="button" class="btn btn-success" (click)="editDesocupacao(desocupacao)">                                    
+                    <span class="glyphicon glyphicon-pencil"></span>
+                  </button>                      
+              </td>                  
+            </tr>                   
+        </tbody>
+    </table>      
+
+</div>
