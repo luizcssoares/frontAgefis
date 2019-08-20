@@ -5,7 +5,7 @@ Cliente Angular para aplicacao APIRest Agefis - TESTE DE DESENVOLVIMENTO DE SOFT
 ## Importante:
 O arquivo  abaixo deve ser alterado com as configuracoes da RestAPI Agefis :
 
-..environments/environment.ts
+..environments/environment.ts<br/>
 export const environment = {
   production: false,
   urlVaga : 'http://localhost:8080/api/vaga',
