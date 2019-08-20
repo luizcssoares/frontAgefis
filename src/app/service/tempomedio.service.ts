@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Tempomedio } from '../model/tempomedio.model';
+import { environment } from '../../environments/environment';
 
 @Injectable()
  
@@ -9,7 +10,7 @@ import { Tempomedio } from '../model/tempomedio.model';
 */
 export class TempomedioService {
  
-    private apiUrl = 'http://localhost:8080/api/relatorio/tempomedio';  // URL para web api
+    private apiUrl = environment.urlTempoMedio;  // URL para web api
     //private apiUrl = 'http://luizcssoares.gear.host/api/produto';  // URL para web api
     
     tempomedio : Tempomedio;

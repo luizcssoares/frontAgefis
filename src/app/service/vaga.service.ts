@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Vaga } from '../model/vaga.model';
+import { environment } from '../../environments/environment';
 
 @Injectable()
  
@@ -9,7 +10,7 @@ import { Vaga } from '../model/vaga.model';
 */
 export class VagaService {
  
-    private apiUrl = 'http://localhost:8080/api/vaga';  // URL para web api
+    private apiUrl = environment.urlVaga;  // URL para web api
     //private apiUrl = 'http://luizcssoares.gear.host/api/produto';  // URL para web api
     
     vaga : Vaga;

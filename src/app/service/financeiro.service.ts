@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Financeiro } from '../model/financeiro.model';
+import { environment } from '../../environments/environment';
 
 @Injectable()
  
@@ -9,7 +10,7 @@ import { Financeiro } from '../model/financeiro.model';
 */
 export class FinanceiroService {
  
-    private apiUrl = 'http://localhost:8080/api/relatorio/financeiro';  // URL para web api
+    private apiUrl = environment.urlFinanceiro;  // URL para web api
     //private apiUrl = 'http://luizcssoares.gear.host/api/produto';  // URL para web api
     
     finaceiro : Financeiro;

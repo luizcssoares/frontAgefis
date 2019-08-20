@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Movimento } from '../model/movimento.model';
+import { environment } from '../../environments/environment';
 
 @Injectable()
  
@@ -9,7 +10,7 @@ import { Movimento } from '../model/movimento.model';
 */
 export class MovimentoService {
  
-    private apiUrl = 'http://localhost:8080/api/relatorio/movimento';  // URL para web api
+    private apiUrl = environment.urlMovimento;  // URL para web api
     //private apiUrl = 'http://luizcssoares.gear.host/api/produto';  // URL para web api
     
     movimento : Movimento;

@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Desocupacao } from '../model/desocupacao.model';
+import { environment } from '../../environments/environment';
 
 @Injectable()
  
@@ -9,7 +10,7 @@ import { Desocupacao } from '../model/desocupacao.model';
 */
 export class DesocupacaoService {
  
-    private apiUrl = 'http://localhost:8080/api/desocupacao';  // URL para web api
+    private apiUrl = environment.urlDesocupacao;  // URL para web api
     //private apiUrl = 'http://luizcssoares.gear.host/api/produto';  // URL para web api
     
     descocupacao : Desocupacao;
